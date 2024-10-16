@@ -1,0 +1,16 @@
+CUDA_VISIBLE_DEVICES=0,1 python train_UAMT_isd.py \
+    --train_encoder 1 \
+    --train_decoder 1 \
+    --K 36 \
+    --root_path /data/data/ACDC \
+    --exp ACDC/training_pool_latentF512_K36_com_2_final \
+    --k1 1 \
+    --k2 1 \
+    --latent_pooling_size 1 \
+    --latent_feature_size 512 \
+    --output_pooling_size 8 \
+    --T_s 0.1 \
+    --T_t 0.01 \
+    --max_iterations 30000 \
+    --labeled_num 5 \
+    --num_classes 4
